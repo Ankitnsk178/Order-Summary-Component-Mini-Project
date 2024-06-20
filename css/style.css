@@ -152,4 +152,8 @@ body{
         width: 90%;
         margin: auto;
     }
+
+    .plan{
+        padding: 0rem;
+    }
 }
