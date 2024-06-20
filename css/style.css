@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: url(../images/pattern-background-desktop.svg) , var(--Paleblue);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 8rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Verypaleblue);
+    width: 450px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.192);
+}
+
+.hero_image{
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+.summary{
+    text-align: center;
+    color: var(--Darkblue);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.desc{
+    text-align: center;
+    color: var(--Desaturatedblue);
+    padding: 0rem 2rem;
+    font-weight: 450;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.left_plan{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+
+}
+
+.charge{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.charge_text{
+    color: var(--Darkblue);
+    font-weight: 700;
+}
+
+.charge_amount{
+    color: var(--Desaturatedblue);
+    font-weight: 500;
+}
+
+.change_plan{
+    font-weight: 700;
+}
+
+.change_plan:hover{
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    cursor: pointer;
+}
+
+.payment{
+    color: var(--Verypaleblue);
+    background-color: var(--Brightblue);
+    border: none;
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.073);
+    margin-top: 1rem;
+}
+
+.payment:hover{
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.801);;
+}
+
+.cancel{
+    color: var(--Desaturatedblue);
+    background-color: var(--Verypaleblue);
+    border: none;
+    font-weight: 700;
+    padding: 0.8rem;
+}
+
+.cancel_text:hover{
+    color: var(--Darkblue);
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    body{
+        background: url(../images/pattern-background-mobile.svg) , var(--Paleblue);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container{
+        padding: 7rem 0rem;
+    }
+
+    .card{
+        width: 90%;
+        margin: auto;
+    }
+}
